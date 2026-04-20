@@ -83,10 +83,9 @@
     <div class="w3-container w3-padding-32" id="cluster">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><span style="color:#5b9ab5">Working Together</span></h3>
         <p><b><span class=" w3-text-grey">Creating Agent Dialogues</span></b></p>
-       <br>
         <p>Create an agent dialogue, using KQML and KIF, between two agents (named Alice and Bob).<br>
             Alice is an agent designed to procure stock and Bob is an agent that controls the stock levels for a warehouse.<br>
-            This dialogue should see Alice asking Bob about the available stock of 50 inch televisions, and also querying the number of HDMI slots the televisions have.<br></p>
+            This dialogue should see Alice asking Bob about the available stock of 50 inch televisions, and also querying the number of HDMI slots the televisions have.<br></p><br>
         <div style="width:60%"><pre><code class="python">
             ;; Alice asks Bob about available stock of 50 inch televisions
 (ask-one
@@ -130,16 +129,6 @@
    (hdmi-slots (television tv50)
                (number-of-slots 3)))
         </code></pre></div>
-        <div style="width:60%"><pre><code class="python">
-            <b>Output:</b><br>
-            Jack: [1, 0, 1, 0, 0, 0]
-            Mary: [1, 0, 1, 0, 1, 0]
-            Jim: [1, 1, 0, 0, 0, 0]<br>
-            Jack & Mary:  0.6666666666666666
-            Jack & Jim:  0.3333333333333333
-            Jim & Mary:  0.25
-        </code></pre></div><br>
-        <p><a href="https://github.com/christgithub/eportfolio/blob/main/unit5/jaccard_coefficient.ipynb" target="_blank" rel="noopener noreferrer"><b>Artefact:</b> jaccard_coefficient.ipynb</a></p>
     </div>
 
     <!-- UNIT 6 --------------------------------------------------------------------------------------------------------------------------------->
