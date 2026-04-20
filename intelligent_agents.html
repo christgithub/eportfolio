@@ -78,7 +78,7 @@
         </p></div>
     </div>
 
-    <!-- UNIT 5 --------------------------------------------------------------------------------------------------------------------------------->
+    <!-- UNIT 6 --------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="w3-container w3-padding-32" id="cluster">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><span style="color:#5b9ab5">Working Together</span></h3>
@@ -131,32 +131,32 @@
         </code></pre></div>
     </div>
 
-    <!-- UNIT 6 --------------------------------------------------------------------------------------------------------------------------------->
-
-    <div class="w3-container w3-padding-32" id="kmeans-python">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><span style="color:#5b9ab5">Unit 6: Clustering with
-            Python</span></h3>
-        <p>
-            Clustering is an iterative method for grouping a collection of objects in such a manner that objects in the same cluster are more similar in some specific predefined characteristics to each other than to those in other clusters. Leveraging the K-means algorithm, we experimented with clustering by loading the Iris dataset in order to surface different groups of flowers based on characteristics such as sepal length, sepal width, petal length and petal width. After setting our centroids, we invoke the K-means method ‘Fit’.
-            We use the Elbow method to determine the optimal number of clusters so that we can avoid overfitting.
-            By employing the sum of square error (SSE) we measure the total squared distance between each data point and the centroid of the cluster it belongs to.
-        </p>
-        <p><a href="" target="_blank" rel="noopener noreferrer"><b>Artefact:</b> Iris_K-means.ipynb</a></p>
-    </div>
-
-    <!-- UNIT 7 --------------------------------------------------------------------------------------------------------------------------------->
+    <!-- UNIT 8 --------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="w3-container w3-padding-32" id="anns">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><span style="color:#5b9ab5">Unit 7: Introduction to
-            Artificial Neural Networks (ANNs)</span></h3>
-        <p>An Artificial neural network consists of connected nodes called neurons, which model the neurons in the brain. The connections between neurons serve a function similar to the brain synaptic neural connections adjusting their strength (weight) depending on stimuli. We experimented with the gradient descent function or loss function of an ANN by adjusting the learning rate which is the stride in sort taken during the descent along the function. The cost function is crucial to the learning of a model and offers a metric to measure a model's performance by quantifying the difference between predictions and actual results. The lower the value, the better the model is learning to fit the data in an optimal way. At the lowest value of the cost function, the model has reached convergence.
-            Applying the calculations of chained partial derivatives to measure and adjust the ANN learning performance was fascinating and I finally was able to apply calculus to a concrete use case.
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><span style="color:#5b9ab5">Creating Parse Trees</span></h3>
+        <p>
+            Create a constituency-based parse tree for the following phrases:
+<u>
+    <li>The government raised interest rates.</li>
+    <li>The internet gives everyone a voice.</li>
+    <li>The man saw the dog with the telescope.</li>
+</u>
         </p>
-        <p><a href="https://github.com/christgithub/eportfolio/blob/main/unit7/Unit07%20Ex1%20simple_perceptron.ipynb" target="_blank" rel="noopener noreferrer"><b>Artefact:</b> Ex1 simple_perceptron.ipynb</a></p>
-        <p><a href="https://github.com/christgithub/eportfolio/blob/main/unit7/Unit07%20Ex2%20perceptron_AND_operator.ipynb" target="_blank" rel="noopener noreferrer"><b>Artefact:</b> Ex2 perceptron_AND_operator.ipynb</a></p>
-        <p><a href="https://github.com/christgithub/eportfolio/blob/main/unit7/Unit07%20Ex3%20multi-layer%20Perceptron.ipynb" target="_blank" rel="noopener noreferrer"><b>Artefact:</b> Ex3 multi-layer Perceptron.ipynb</a></p>
-    </div>
+        <div style="width:60%"><pre><code class="python">
+            1. The government raised interest rates.
 
+(S
+  (NP
+    (DT The)
+    (NN government))
+  (VP
+    (VBD raised)
+    (NP
+      (NN interest)
+      (NNS rates))))
+        </code>
+        </pre></div>
     <!-- UNIT 8 --------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="w3-container w3-padding-32" id="trn-anns">
